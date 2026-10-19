@@ -159,17 +159,17 @@
 <div class="site">
   <header class="header pad">
     <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark"></span>forma<sup>®</sup><span class="brand-mini">CONCEPTO PROVISIONAL<br>REMODELACIONES · COLOMBIA</span></a>
-    <nav id="menu" class="nav" aria-label="Navegación principal"><a href="#referentes">Referentes</a><a href="#modelo">Modelo</a><a href="#alianzas">Apoyos</a><a href="#motorcomercial">Marketing</a><a href="#ventas">Ventas</a><a href="#proyeccion">Finanzas</a><a href="#plan">Ruta</a></nav>
+    <nav id="menu" class="nav" aria-label="Navegación principal"><a href="#referentes">Referentes</a><a href="#modelo">Modelo</a><a href="#alianzas">Apoyos</a><a href="#motorcomercial">Marketing</a><a href="#ventas">Ventas</a><a href="#unidad">Rentabilidad</a><a href="#despliegue">Ruta</a></nav>
     <div class="top-actions"><div class="loc">Bucaramanga, Santander <span>↗ Colombia</span></div><a class="small-btn" href="#contacto">Empezar proyecto ↗</a><button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
   </header>
 
   <main>
     <section class="hero pad" id="inicio">
       <div class="hero-head">
-        <div class="eyebrow">Estrategia de negocio · Edición 2026</div>
+        <div class="eyebrow">Plan de negocio completo · Edición ampliada 2026</div>
         <h1>Rediseñar<br>espacios.<br><span class="thin">Construir</span><br><em>confianza.</em></h1>
         <p class="hero-lead">Un plan de empresa completo: referentes reales, apoyos, proveedores, clientes, marketing, ventas, operación, finanzas y expansión desde Bucaramanga.</p>
-        <div class="hero-actions"><a href="#referentes" class="cta">Explorar el plan de empresa <span class="circle">↗</span></a><a href="#plan" class="quiet-link">Ver hoja de ruta <span>↗</span></a></div>
+        <div class="hero-actions"><a href="#referentes" class="cta">Explorar el plan de empresa <span class="circle">↗</span></a><a href="#despliegue" class="quiet-link">Ver hoja de ruta <span>↗</span></a></div>
       </div>
       <div class="hero-visual" aria-label="Imagen de inspiración arquitectónica, no proyecto propio"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Interior residencial contemporáneo de referencia visual" loading="eager" onerror="this.style.display='none'"></div><div class="image-label">UNA NUEVA FORMA DE REMODELAR<br><span>Imagen de inspiración · no es un proyecto ejecutado</span></div></div>
       <div class="hero-ghost" aria-hidden="true">FORMA</div>
@@ -332,7 +332,42 @@
       <div class="sample">Para arrancar no hace falta gran escala. Hace falta un sistema que confirme, semana a semana, <b>cuáles mensajes atraen propietarios solventes, qué visitas generan propuestas y qué proyectos dejan margen real.</b></div>
     </section>
 
-    <section class="section pad" id="plan"><div class="roadmap-head reveal"><div><div class="section-kicker"><b>05</b> / Desde cero, sin saltarse pasos</div><h2 class="big-title">Los primeros <span class="serif">90 días.</span></h2></div><p class="section-lead">La prioridad no es crecer rápido: es validar la oferta, controlar los costos, construir credibilidad y no asumir más obras de las que el equipo puede supervisar.</p></div>
+    
+<section class="unit-section pad" id="unidad">
+<div class="unit-head"><div><div class="section-kicker"><b>12</b> / Rentabilidad de cada contrato</div><h2 class="big-title">Una obra vendida<br><span class="serif">no es una obra rentable.</span></h2></div><p>Herramienta exploratoria en pesos colombianos. Modifica el valor contratado y costos; esto es un ejercicio de decisiones, no precios de mercado, cotización oficial ni utilidad neta.</p></div>
+<div class="unit-grid reveal">
+<div class="unit-controls">
+<div class="unit-field"><label for="obraPrecio">Valor facturado por contrato <output id="obraPrecioOut"></output></label><input id="obraPrecio" type="range" min="10000000" max="100000000" step="1000000" value="28000000"></div>
+<div class="unit-field"><label for="obraCosto">Costos directos de ejecución <output id="obraCostoOut"></output></label><input id="obraCosto" type="range" min="50" max="90" step="1" value="70"></div>
+<div class="unit-field"><label for="obraAdq">Adquisición comercial atribuida <output id="obraAdqOut"></output></label><input id="obraAdq" type="range" min="0" max="4000000" step="100000" value="800000"></div>
+<div class="unit-field"><label for="obraOver">Gastos fijos/gestión asignados <output id="obraOverOut"></output></label><input id="obraOver" type="range" min="0" max="6000000" step="100000" value="1800000"></div>
+<p style="font-size:11px;color:#7a7e75;line-height:1.7;margin-top:22px">Los directos deben incluir mano de obra, materiales, fletes, desperdicio, especialista técnico y costos de seguridad correspondientes. Ajusta overhead para cubrir administración, software, honorarios y servicios.</p>
+</div>
+<div class="unit-results"><div><span>Resultado operativo estimado por obra / antes de impuestos</span><strong id="obraResultado">$0</strong><span id="obraMargen">0% sobre ventas</span></div>
+<div><div class="unit-mini"><span>Costos directos</span><b id="obraDirecto">$0</b></div><div class="unit-mini"><span>Margen bruto inicial</span><b id="obraBruto">$0</b></div><div class="unit-mini"><span>Captación + asignación de fijos</span><b id="obraOtros">$0</b></div><p id="obraLectura">Resultado ilustrativo.</p></div>
+</div></div>
+<p class="unit-warning">Un resultado positivo no equivale a dinero disponible: revisar impuestos, retenciones, caja, intereses, pólizas, tiempos de cobro, costos de garantías, contingencias y aportes. No presupuestar sin visita, despiece de partidas y validación técnica. En la sección “Números” anterior hay otro escenario de embudo comercial; ambos son modelos independientes.</p>
+</section>
+<section class="launch-section pad" id="despliegue">
+<div class="section-kicker"><b>13</b> / Plan operativo con responsables y condiciones</div><h2 class="big-title">Qué hacer primero.<br><span class="serif">Qué no hacer todavía.</span></h2>
+<p class="section-lead">El tiempo es tentativo. El criterio para avanzar es que los entregables estén listos y funcionen. Evitar gastar en pauta antes de tener capacidad operativa comprobada.</p>
+<div class="launch-grid reveal">
+<article class="launch-phase"><span class="badge-time">DÍAS 01 — 15</span><h3>Construir la base.</h3><p><strong>Responsables:</strong> fundador, director técnico, contador/asesor.</p><ul><li>Elegir figura empresarial y obligaciones.</li><li>Definir 2 servicios principales, zonas y alcance.</li><li>20 entrevistas exploratorias a propietarios y aliados (objetivo, no hecho).</li><li>Presupuesto tipo por partidas y modelo de contrato revisado.</li><li>Seleccionar supervisor técnico según obras objetivo.</li></ul><div class="gate">Puerta para avanzar: viabilidad legal y técnica + estructura de costos por servicio.</div></article>
+<article class="launch-phase"><span class="badge-time">DÍAS 16 — 30</span><h3>Armar la capacidad.</h3><p><strong>Responsables:</strong> operaciones, compras y líder comercial.</p><ul><li>Dos candidatos auditados por oficio crítico.</li><li>Matriz de materiales, precios y lead time.</li><li>CRM con etapas, guiones y SLA.</li><li>Landing cocina, landing baño y portafolio honesto.</li><li>Visitas de diagnóstico y primeros presupuestos piloto.</li></ul><div class="gate">Puerta para avanzar: personal, términos de pago y ruta de contingencias listos.</div></article>
+<article class="launch-phase"><span class="badge-time">DÍAS 31 — 60</span><h3>Validar el mercado.</h3><p><strong>Responsables:</strong> marketing, asesor y técnico.</p><ul><li>Activar Perfil de Empresa si cumple requisitos.</li><li>Google Ads geolocalizado y 3 creatividades Meta.</li><li>Revisar calidad de cada lead semanalmente.</li><li>Visitas y propuestas con costos documentados.</li><li>Tomar solo proyectos con capacidad disponible.</li></ul><div class="gate">Puerta para avanzar: oportunidades calificadas y capacidad de cumplir plazo/calidad.</div></article>
+<article class="launch-phase"><span class="badge-time">DÍAS 61 — 180</span><h3>Demostrar y repetir.</h3><p><strong>Responsables:</strong> dirección + equipo completo.</p><ul><li>Ejecutar proyectos piloto remunerados con seguimiento.</li><li>Documentar resultado y cierre financiero real.</li><li>Medir márgenes y satisfacción posventa.</li><li>Corregir oferta y canales débiles.</li><li>Abrir nuevas zonas solo con líderes y aliados evaluados.</li></ul><div class="gate">Puerta para expandir: varias obras cerradas sin incidencias críticas y margen positivo consistente.</div></article>
+</div>
+<div class="section-kicker"><b>14</b> / Riesgos que pueden matar el negocio</div>
+<div class="risk-grid">
+<article><b>01 / Sobrecostos ocultos</b><p>Diagnóstico incompleto, redes antiguas o cantidades erradas. Mitigar con visita, contingencia presupuestada, exclusiones visibles y cambios firmados.</p></article>
+<article><b>02 / Anticipos que se consumen</b><p>Flujo de caja desalineado. Cuenta por obra, cronograma de recaudos y compras, no mezclar fondos de contratos distintos.</p></article>
+<article><b>03 / Contratista incumplido</b><p>No depender de una sola cuadrilla. Validar capacidad y referencias, definir hitos, reemplazos y criterios de aceptación.</p></article>
+<article><b>04 / Pauta sin negocio</b><p>Leads que solo preguntan precios. Medir costo por visita/propuesta/contrato y pausar campañas que no avanzan en el CRM.</p></article>
+<article><b>05 / Reclamaciones y reputación</b><p>No ocultar defectos ni prometer garantías vagas. Acta de entrega, condiciones pactadas, reserva y canal real de posventa.</p></article>
+<article><b>06 / Riesgo legal y seguridad</b><p>Obras fuera de alcance, estructura, copropiedad, riesgos laborales y datos de clientes. Evaluar con profesionales y normas antes de iniciar.</p></article>
+</div>
+<div class="reference-note" style="margin-top:27px"><div><strong>Decisión ejecutiva.</strong><br>La publicidad se escala únicamente cuando el cierre comercial, la capacidad técnica y la rentabilidad por proyecto pueden demostrarse.</div><a href="#unidad" class="quiet-link">Volver a números ↗</a></div>
+</section><section class="section pad" id="plan"><div class="roadmap-head reveal"><div><div class="section-kicker"><b>05</b> / Desde cero, sin saltarse pasos</div><h2 class="big-title">Los primeros <span class="serif">90 días.</span></h2></div><p class="section-lead">La prioridad no es crecer rápido: es validar la oferta, controlar los costos, construir credibilidad y no asumir más obras de las que el equipo puede supervisar.</p></div>
       <div class="roadmap"><div class="road reveal"><div class="days">DÍAS 01—15</div><h3>Fundamentos.</h3><div><p>Definir segmento y zonas atendidas; validar demanda con entrevistas; construir presupuesto por partidas; seleccionar responsable técnico, contratistas y proveedores; registrar el negocio y revisar obligaciones con asesor contable/legal.</p><span class="deliver">Entregable: oferta + costos + equipo + procesos</span></div></div><div class="road reveal"><div class="days">DÍAS 16—30</div><h3>Presencia y prueba.</h3><div><p>Desarrollar identidad y landing, ficha Google, WhatsApp Business y CRM; documentar un caso piloto real y verificable; fotografiar metodología; preparar contrato, visitas y propuesta comercial.</p><span class="deliver">Entregable: web + CRM + 1 caso documentado</span></div></div><div class="road reveal"><div class="days">DÍAS 31—60</div><h3>Activar demanda.</h3><div><p>Publicar contenido orgánico, probar campañas Meta y Google con presupuesto controlado, activar alianzas, registrar cada lead y cerrar proyectos dentro de la capacidad disponible. Revisar semanalmente datos y calidad de ejecución.</p><span class="deliver">Entregable: embudo medible + primeras ventas</span></div></div><div class="road reveal"><div class="days">DÍAS 61—90</div><h3>Estandarizar.</h3><div><p>Crear plantillas de informe, protocolos de obra, fichas de materiales, checklists y sistema de referidos. Elegir los servicios con mejor contribución. Decidir si ampliar presupuesto, cobertura o equipo.</p><span class="deliver">Entregable: playbook operativo + plan siguiente trimestre</span></div></div></div>
     </section>
 
@@ -344,7 +379,23 @@
     </section>
 
     <section class="contact pad" id="contacto"><div class="contact-box"><div><div class="section-kicker"><b>08</b> / El siguiente paso</div><h2 class="big-title">Empecemos<br>con un <span class="serif">plan real.</span></h2><p class="section-lead">Este es un prototipo de estrategia, no una empresa ya constituida ni una plataforma conectada. Usa el formulario para preparar un resumen de proyecto y copiarlo a tu portapapeles.</p><div style="margin-top:35px;font-size:11px;color:#868981">Nombre visual provisional: <b style="color:#222">FORMA®</b> · Se sustituye por la marca definitiva.</div></div><form id="brief" class="contact-form"><label class="field">Zona del proyecto<select id="zona" required><option>Bucaramanga</option><option>Floridablanca</option><option>Girón</option><option>Piedecuesta</option><option>Otra ciudad de Colombia</option></select></label><label class="field">Tipo de proyecto<select id="tipo" required><option>Cocina o baño</option><option>Apartamento completo</option><option>Obra gris y acabados</option><option>Local / oficina</option><option>Otro</option></select></label><label class="field">Inversión que contempla<select id="rango"><option>Aún por definir</option><option>Menos de $10 millones COP</option><option>Entre $10 y $25 millones COP</option><option>Entre $25 y $60 millones COP</option><option>Más de $60 millones COP</option></select></label><label class="field">Qué necesita<textarea id="detalle" rows="3" placeholder="Describe el espacio, alcance y fecha aproximada..."></textarea></label><button type="submit">Copiar resumen de proyecto <span>↗</span></button><div class="feedback" id="feedback" aria-live="polite"></div></form></div></section>
-  </main>
+  
+<section class="sources-section pad" id="fuentes"><div class="section-kicker"><b>15</b> / Fuentes para comprobar y profundizar</div><h2>Investigación y documentación.</h2>
+<p style="color:#626660;font-size:12px;max-width:740px;line-height:1.65">Se separan observaciones de sitios consultados de hipótesis propuestas para esta empresa. Los presupuestos, tiempos, metas, nombres, alianzas, estimaciones y paquetes son una hipótesis de implementación y requieren validación real antes de comercializar.</p>
+<div class="sources-grid">
+<a href="https://www.blockrenovation.com/how-it-works" target="_blank" rel="noopener">01. Block Renovation — proceso, contratistas y pagos ↗</a>
+<a href="https://www.refreshrenovations.com/what-is-refresh/the-refresh-experience" target="_blank" rel="noopener">02. Refresh — cinco etapas y gerencia ↗</a>
+<a href="https://sweeten.com/how-we-work/" target="_blank" rel="noopener">03. Sweeten — emparejamiento y cotizaciones ↗</a>
+<a href="https://www.tendenzza.co/remodelacion/" target="_blank" rel="noopener">04. Tendenzza — oferta en Bucaramanga ↗</a>
+<a href="https://inhomearquitectos.com/" target="_blank" rel="noopener">05. INHOME — proyectos locales ↗</a>
+<a href="https://cocinasintegralesbucaramanga.com/" target="_blank" rel="noopener">06. Origen Mobiliario — configurador y flujo ↗</a>
+<a href="https://kreasas.app/servicios" target="_blank" rel="noopener">07. KREA — nicho cocinas y baños ↗</a>
+<a href="https://support.google.com/business/answer/7091?hl=es-419" target="_blank" rel="noopener">08. Google — ranking local, fotos y reseñas ↗</a>
+<a href="https://support.google.com/google-ads/answer/6100664" target="_blank" rel="noopener">09. Google Ads — medición de llamadas ↗</a>
+<a href="https://www.camaradirecta.com/crear-mi-empresa" target="_blank" rel="noopener">10. Cámara de Comercio de Bucaramanga ↗</a>
+<a href="https://minvivienda.gov.co/node/1380" target="_blank" rel="noopener">11. MinVivienda — reparaciones locativas ↗</a>
+<a href="https://support.google.com/business/answer/3474122?hl=es" target="_blank" rel="noopener">12. Google — reseñas genuinas ↗</a>
+</div></section></main>
 
   <footer class="pad"><div class="footer-top"><div><span class="tag">Investigación + estrategia + dirección creativa</span><div class="footer-big">FORMA®</div><div class="micro">Una propuesta para transformar espacios y construir una empresa sostenible.</div></div><div style="max-width:360px"><span class="tag">Fuentes y referentes consultados</span><div class="source-links"><a href="https://www.blockrenovation.com/how-it-works" target="_blank" rel="noopener">Block Renovation ↗</a><a href="https://datareportal.com/reports/digital-2026-colombia" target="_blank" rel="noopener">Digital 2026 Colombia ↗</a><a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener">Google Business ↗</a><a href="https://www.constructoracolombia.com/" target="_blank" rel="noopener">Referencia local ↗</a><a href="https://cocinasintegralesbucaramanga.com/" target="_blank" rel="noopener">Referencia cocinas ↗</a><a href="https://normativa.colpensiones.gov.co/colpens/docs/decreto_1077_2015_pr031.htm" target="_blank" rel="noopener">Normas de obra ↗</a></div></div></div><div class="footer-bottom" style="margin-top:26px"><p>Estudio conceptual · octubre 2026. Las fotografías son ilustrativas. Las proyecciones financieras son simulaciones con supuestos editables; no son datos verificados ni garantías de ventas. Revisar obligaciones legales con profesionales y autoridades competentes.</p><div class="foot-mono">BUCARAMANGA / CO<br>ESTRATEGIA 001 — 2026</div></div></footer>
 </div>
@@ -391,6 +442,26 @@
   });
   const io='IntersectionObserver'in window?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}})},{threshold:.09}):null;
   document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('visible'));
+</script>
+
+<script>
+(function(){
+  const el=id=>document.getElementById(id);
+  const ids=['obraPrecio','obraCosto','obraAdq','obraOver'];
+  const pesos=n=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);
+  const fmt=n=>new Intl.NumberFormat('es-CO',{maximumFractionDigits:1}).format(n);
+  function calcular(){
+    const price=+el('obraPrecio').value,pct=+el('obraCosto').value,lead=+el('obraAdq').value,over=+el('obraOver').value;
+    const direct=price*pct/100,gross=price-direct,result=gross-lead-over,margin=(result/price)*100;
+    el('obraPrecioOut').textContent=pesos(price);el('obraCostoOut').textContent=pct+'%';
+    el('obraAdqOut').textContent=pesos(lead);el('obraOverOut').textContent=pesos(over);
+    el('obraDirecto').textContent=pesos(direct);el('obraBruto').textContent=pesos(gross);
+    el('obraOtros').textContent=pesos(lead+over);el('obraResultado').textContent=pesos(result);
+    el('obraResultado').style.color=result<0?'#ff9a8f':'#f4f4f0';el('obraMargen').textContent=fmt(margin)+'% sobre ventas';
+    el('obraLectura').textContent=result<0?'Este escenario pierde dinero antes de impuestos. Revisar precio y partidas antes de vender.':'Escenario positivo antes de impuestos y reservas: comprobar costos reales y necesidades de caja.';
+  }
+  ids.forEach(id=>el(id).addEventListener('input',calcular));calcular();
+})();
 </script>
 </body>
 </html>
