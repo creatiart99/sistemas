@@ -1,4 +1,4 @@
-/* EL STAND DE LA MUJER — MAPA DE TRANSFORMACIÓN PROPUESTO, NO SISTEMAS YA IMPLEMENTADOS */
+/* PROPUESTA ESTRATÉGICA EL STAND DE LA MUJER — SIN INTEGRACIONES ACTIVAS */
 window.GROWTH_DATA = {
   "months": [
     {
@@ -80,6 +80,12 @@ window.GROWTH_DATA = {
           "Entregar gobierno y manuales",
           "Diseñar siguiente hoja de ruta"
         ]
+      ],
+      "process": [
+        "Diagnosticar tienda, web y clientas",
+        "Definir objetivos, segmentos y portafolio",
+        "Priorizar proyectos por impacto y viabilidad",
+        "Gobernar resultados cada semana"
       ]
     },
     {
@@ -129,6 +135,12 @@ window.GROWTH_DATA = {
           "Documentar playbook de pauta",
           "Planificar campañas de siguiente trimestre"
         ]
+      ],
+      "process": [
+        "Investigar necesidades y demanda",
+        "Producir contenido y ofertas relevantes",
+        "Distribuir en redes, SEO y anuncios",
+        "Optimizar por ventas y margen"
       ]
     },
     {
@@ -178,6 +190,12 @@ window.GROWTH_DATA = {
           "Entregar manual de atención",
           "Transferir tablero de experiencia"
         ]
+      ],
+      "process": [
+        "Captar la consulta y reconocer necesidad",
+        "Asesorar talla, ajuste y producto",
+        "Cerrar venta y acompañar el pedido",
+        "Posventa y fidelización con permiso"
       ]
     },
     {
@@ -227,6 +245,12 @@ window.GROWTH_DATA = {
           "Capacitar en conteos cíclicos",
           "Fijar auditorías periódicas"
         ]
+      ],
+      "process": [
+        "Recibir y codificar referencias",
+        "Controlar inventario por talla y color",
+        "Alistar, despachar y trazar pedidos",
+        "Resolver novedades y reponer stock"
       ]
     },
     {
@@ -276,6 +300,12 @@ window.GROWTH_DATA = {
           "Entregar modelo presupuestal",
           "Definir metas de rentabilidad próximas"
         ]
+      ],
+      "process": [
+        "Costear cada SKU y pedido",
+        "Presupuestar caja, compras y pauta",
+        "Aprobar precios, paquetes y campañas",
+        "Medir contribución y ajustar"
       ]
     },
     {
@@ -325,6 +355,12 @@ window.GROWTH_DATA = {
           "Capacitar administradores",
           "Entregar plan de mantenimiento"
         ]
+      ],
+      "process": [
+        "Consolidar fuentes y permisos",
+        "Integrar Shopify con CRM y reportes",
+        "Automatizar tareas y pilotear IA",
+        "Monitorear calidad, seguridad y adopción"
       ]
     }
   ],
