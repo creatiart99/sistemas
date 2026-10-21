@@ -44,7 +44,7 @@ function selectPillar(i,center){
  state.pillar=i;
  document.querySelectorAll("[data-branch]").forEach(function(b){b.classList.toggle("muted-branch",i!==null&&Number(b.dataset.branch)!==i);b.classList.toggle("chosen-branch",i!==null&&Number(b.dataset.branch)===i)});
  document.querySelectorAll(".filter-btn").forEach(function(b){b.classList.toggle("active",(i===null?"all":String(i))===b.dataset.filter)});
- if(i!==null){renderPillarPanel(DB.pillars[i]);if(center){var pos=positions[i];$("mapScroll").scrollTo({left:Math.max(0,(pos.x+330)*state.zoom-$("mapScroll").clientWidth/2),top:Math.max(0,(pos.y+185)*state.zoom-$("mapScroll").clientHeight/2),behavior:"smooth"})}}else{renderMapGuide()}
+ if(i!==null){renderPillarPanel(DB.pillars[i]);if(center){setZoom(.95);var pos=positions[i];$("mapScroll").scrollTo({left:Math.max(0,(pos.x+330)*state.zoom-$("mapScroll").clientWidth/2),top:Math.max(0,(pos.y+185)*state.zoom-$("mapScroll").clientHeight/2),behavior:"smooth"})}}else{renderMapGuide()}
 }
 function openPillar(i){selectPillar(i,false);$("inspector").classList.add("visible");$("inspector").setAttribute("aria-hidden","false");}
 function showInspector(html){
