@@ -1,33 +1,25 @@
-# Los Estilistas · The Growth Edit
+# Los Estilistas × Samuel Acuña — Mapa de transformación a 6 meses
 
-Panel estático e interactivo para explorar una **proyección estratégica de seis meses**, desarrollada por pilares según la metodología de Samuel Acuña.
+**Sitio:** https://creatiart99.github.io/sistemas/los-estilistas/ (sujeto a que GitHub Pages esté activo desde main/root)
 
-## Vista
+El panel no es una landing comercial convencional: muestra un mapa mental conectado del negocio con **6 pilares → 24 sistemas propuestos → resultados esperados**, y una hoja de ruta de seis meses con iniciativas por pilar.
 
-Publicación prevista mediante GitHub Pages del repositorio `creatiart99/sistemas`:
+## Componentes
+- `index.html`: diseño responsive, canvas conectado con zoom, rutas por meses, inventario de sistemas y resultados.
+- `data.js`: seis pilares, objetivos de cada mes, 36 conjuntos de actividades (3 acciones por conjunto) y fichas de 24 sistemas.
+- `app.js`: interactividad, conexiones gráficas, filtro y enfoque por pilar, panel de detalle, buscador y exportación CSV.
+- `logo.svg`: representación vectorial de marca sobre fondo crema y sin marco circular; ajustar a los vectores oficiales del cliente antes de uso definitivo.
+- `favicon.svg`: monograma compacto LE para el navegador.
 
-https://creatiart99.github.io/sistemas/los-estilistas/
+## Cómo usar
+1. El mapa mental se puede desplazar y ampliar con los controles.
+2. Seleccionar un pilar en la columna lateral centra y amplía su rama.
+3. Hacer clic sobre un sistema muestra su funcionamiento, resultado, entregable, indicador, meses y dependencias.
+4. Las pestañas `6 meses`, `24 sistemas` y `Resultados` permiten navegar la propuesta desde otras vistas.
+5. El inventario se puede exportar en CSV.
 
-Si la página no se encuentra disponible, comprobar en Settings → Pages que la fuente de publicación sea `main / (root)`.
+## Alcance y límites
+Esta versión es una **proyección conceptual**, no un software conectado ni una promesa de crecimiento garantizado. Los 24 sistemas aún **no están implementados**. El orden y los resultados deben validarse con información interna, permisos, contratos, presupuesto y supervisión humana. No se han definido porcentajes de mejora reales.
 
-## Qué contiene
-
-- Mapa mental interactivo con los seis pilares: estrategia, marketing, ventas, operaciones, finanzas y tecnología/IA.
-- Desarrollo de las iniciativas y entregables correspondientes a cada pilar durante cada uno de los seis meses.
-- Vista de 36 frentes de trabajo con casillas de validación manual.
-- Notas de dirección persistentes únicamente en localStorage del navegador.
-- Exportación del plan como archivo TXT e impresión/PDF desde el navegador.
-
-## Alcance y advertencias
-
-Es una **proyección de trabajo no ejecutada**. No contiene indicadores reales ni conexiones operativas con Jumpseller, POS, WhatsApp o CRM. Los proyectos, responsables, métricas y fechas exactas deben validarse con la gerencia antes de iniciar. Marcar una actividad como validada no comprueba por sí mismo su ejecución y no sincroniza datos entre dispositivos.
-
-## Diseño
-
-Dirección editorial inspirada en las referencias de beauty/skincare compartidas para esta propuesta: fondo crema, acentos rosa empolvado, cacao y tipografía de alto contraste. No pretende sustituir la identidad gráfica oficial de Los Estilistas. Usa imágenes editoriales externas y tipografías cargadas desde Google Fonts.
-
-## Mantenimiento
-
-La aplicación está contenida en `index.html` con HTML, CSS y JavaScript, sin compilación. Actualizar la constante `pillars` para cambiar actividades, entregables o responsables y `months` para modificar las etapas.
-
-Desarrollado como borrador comercial y estratégico en octubre de 2026.
+## Marca
+El panel utiliza una paleta crema, nude y acentos de color cálido, inspirada en el material entregado. Para fidelidad absoluta de la marca, sustituir los SVG por el archivo maestro aprobado del logo; el actual es una aproximación vectorial y no un arte original certificado.
