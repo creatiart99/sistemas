@@ -114,6 +114,10 @@ body{background:var(--cream);color:var(--ink)}
 .toast{background:#2E261D;color:#FFEECC}
 @media(max-width:950px){.logo-img{width:149px;height:59px}.sidebar{background:#F6ECDD}}
 
+
+.step-process{display:grid;gap:8px;margin:10px 0 16px}
+.process-item{display:flex;align-items:center;gap:12px;background:#F8EFDE;border:1px solid #E7D8B9;border-radius:10px;padding:11px 13px;font-size:12px;line-height:1.45;color:#655132}
+.process-item b{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#B69658;color:#FFF9EC;font-size:10px}
 </style>
 </head>
 <body>
@@ -140,8 +144,8 @@ body{background:var(--cream);color:var(--ink)}
  <main class="content">
   <section class="view mapview" id="view-map" aria-label="Mapa mental de transformación">
     <div class="view-intro">
-      <div><span class="eyebrow">Blueprint estratégico · El Stand de la Mujer × Samuel Acuña</span><h1>El mapa de lo que <em>vamos a construir.</em></h1><p>Un pilar → cuatro sistemas → resultados medibles. Pulsa los sistemas para ver exactamente qué haremos y qué quedará entregado.</p></div>
-      <div class="stats"><div class="stat"><b>06</b><span>Pilares</span></div><div class="stat"><b>24</b><span>Sistemas</span></div><div class="stat"><b>06</b><span>Meses</span></div></div>
+      <div><span class="eyebrow">Blueprint estratégico · El Stand de la Mujer × Samuel Acuña</span><h1>El mapa de lo que <em>vamos a construir.</em></h1><p>Seis procesos empresariales, cuatro sistemas por pilar y resultados medibles. Abre cada rama para descubrir cómo operará y qué entregaremos.</p></div>
+      <div class="stats"><div class="stat"><b>06</b><span>Pilares</span></div><div class="stat"><b>06</b><span>Procesos</span></div><div class="stat"><b>24</b><span>Sistemas</span></div><div class="stat"><b>06</b><span>Meses</span></div></div>
     </div>
     <div class="map-frame">
       <div class="map-toolbar"><span class="map-help"><span class="legend-dot"></span> Arrastra para navegar · Haz clic para explorar</span><div class="map-actions"><button class="zoom-btn" id="zoomOut" type="button" aria-label="Alejar">−</button><span class="zoom-val" id="zoomText">68%</span><button class="zoom-btn" id="zoomIn" type="button" aria-label="Acercar">+</button><button class="zoom-btn fit-btn" id="zoomFit" type="button">Ajustar mapa</button></div></div>
