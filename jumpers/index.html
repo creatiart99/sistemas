@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="Catálogo interactivo de ofertas y sistemas para coaches, psicólogos y mentores. Jumpers × Samuel Acuña.">
+  <meta property="og:title" content="Jumpers × Samuel — Catálogo de soluciones">
+  <meta property="og:description" content="Más clientes. Mejor experiencia. Negocios que escalan.">
+  <title>Jumpers × Samuel | Catálogo de soluciones</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d342b'/%3E%3Cpath d='M18 23h18v18c0 10-7 15-18 13' fill='none' stroke='%23d9f59f' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='18' r='6' fill='%23ed7d61'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#ofertas">Ir al catálogo</a>
+  <div class="announcement">
+    <span class="pulse"></span> Catálogo de soluciones 2026 <span class="slash">/</span> Versión comercial de trabajo
+  </div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="identity" href="#inicio" aria-label="Volver al inicio">
+        <span class="brand-mark">J<span class="brand-cross">×</span>S<span class="brand-dot">.</span></span>
+        <span class="brand-name">JUMPERS <span>×</span> SAMUEL ACUÑA <small>SYSTEMS STUDIO</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación">
+        <a href="#productos">Productos</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#ruta">Cómo venderlo</a>
+      </nav>
+      <a href="#constructor" class="nav-cta">Armar propuesta <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="mini-star">✳</span> ALIANZA ESTRATÉGICA / COACHING ECONOMY</div>
+        <h1>De vender sesiones a construir un <em>negocio que escala.</em></h1>
+        <p>Soluciones listas para ofrecer a coaches, psicólogos y mentores. Captación con IA, seguimiento inteligente y sistemas que liberan tiempo.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-dark">Explorar productos <span>↗</span></a>
+          <a href="#paquetes" class="btn btn-outline">Ver paquetes <span>→</span></a>
+        </div>
+        <div class="hero-metrics">
+          <div><strong>4</strong><span>perfiles</span></div>
+          <div><strong id="product-total">16</strong><span>productos</span></div>
+          <div><strong>5</strong><span>ofertas empaquetadas</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Diagrama del ecosistema comercial y de seguimiento">
+        <div class="visual-topline"><span>THE GROWTH ENGINE</span><span class="live-indicator">● SISTEMA CONECTADO</span></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="system-center"><span>J×S</span><small>BUSINESS<br>OPERATING<br>SYSTEM</small></div>
+        <div class="floating-node node-leads"><span class="node-icon">↗</span><span><small>01 / CAPTACIÓN</small><strong>Embudos con IA</strong></span></div>
+        <div class="floating-node node-client"><span class="node-icon">◈</span><span><small>02 / EXPERIENCIA</small><strong>Tracking inteligente</strong></span></div>
+        <div class="floating-node node-business"><span class="node-icon">▤</span><span><small>03 / OPERACIÓN</small><strong>CRM + Automatización</strong></span></div>
+        <div class="visual-bottom"><span>UNA INFRAESTRUCTURA.</span><span>MÚLTIPLES NEGOCIOS.</span></div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="shell strip-inner">
+        <span>EL MODELO</span>
+        <strong>Jumpers atrae y ayuda a vender</strong>
+        <span class="strip-arrow">→</span>
+        <strong>Samuel estructura y automatiza</strong>
+        <span class="strip-arrow">→</span>
+        <strong>El coach puede crecer mejor</strong>
+      </div>
+    </section>
+
+    <section class="shell segments section" id="perfiles">
+      <div class="section-heading">
+        <div><div class="overline">01 / A QUIÉN VENDEMOS</div><h2>Un sistema. <em>Cuatro mercados.</em></h2></div>
+        <p>Elige el perfil y verás los productos más relevantes. No todos necesitan lo mismo.</p>
+      </div>
+      <div class="segment-tabs" id="segment-tabs" role="group" aria-label="Filtrar por perfil">
+        <button type="button" data-profile="todos" class="segment-tab active" aria-pressed="true"><span class="segment-symbol">✳</span><span>Todos los perfiles</span></button>
+        <button type="button" data-profile="fitness" class="segment-tab" aria-pressed="false"><span class="segment-symbol">↗</span><span>Fitness & bienestar</span></button>
+        <button type="button" data-profile="vida" class="segment-tab" aria-pressed="false"><span class="segment-symbol">◎</span><span>Coaches de vida</span></button>
+        <button type="button" data-profile="psicologia" class="segment-tab" aria-pressed="false"><span class="segment-symbol">◌</span><span>Psicólogos</span></button>
+        <button type="button" data-profile="mentoria" class="segment-tab" aria-pressed="false"><span class="segment-symbol">◇</span><span>Mentores</span></button>
+      </div>
+      <div class="segment-explainer" id="segment-explainer" aria-live="polite">Todos los sectores comparten una base de tecnología, ventas y operaciones; los módulos cambian según su metodología.</div>
+    </section>
+
+    <section class="shell section products-section" id="productos">
+      <div class="section-heading">
+        <div><div class="overline">02 / PRODUCTOS INDIVIDUALES</div><h2>Todo lo que <em>podemos vender.</em></h2></div>
+        <p>Soluciones con un resultado concreto. Combínalas para construir ofertas personalizadas.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filter-scroll" id="category-filters" role="group" aria-label="Filtrar por necesidad">
+          <button type="button" class="filter-pill selected" data-category="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-pill" data-category="Captación" aria-pressed="false">Captación</button>
+          <button type="button" class="filter-pill" data-category="Ventas" aria-pressed="false">Ventas</button>
+          <button type="button" class="filter-pill" data-category="Experiencia" aria-pressed="false">Experiencia</button>
+          <button type="button" class="filter-pill" data-category="Operación" aria-pressed="false">Operación</button>
+          <button type="button" class="filter-pill" data-category="Inteligencia" aria-pressed="false">Inteligencia</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar producto</span><input id="search" type="search" placeholder="Buscar solución..." autocomplete="off"></label>
+      </div>
+      <div class="catalog-meta"><span id="results-label" aria-live="polite">Explora soluciones</span><button type="button" id="reset-filters" class="text-button">Limpiar filtros ↺</button></div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>No encontramos productos para esos filtros. <button type="button" id="clear-from-empty">Ver todo ↗</button></div>
+    </section>
+
+    <section class="dark-section section" id="paquetes">
+      <div class="shell">
+        <div class="section-heading section-heading-inverse">
+          <div><div class="overline">03 / OFERTAS LISTAS PARA VENDER</div><h2>No vendemos herramientas.<br><em>Vendemos resultados.</em></h2></div>
+          <p>Cinco ofertas claras para entrar al negocio, aumentar ticket y construir recurrencia.</p>
+        </div>
+        <div class="bundle-grid" id="bundle-grid"></div>
+        <div class="pricing-footnote">Valores USD de referencia para validar en pilotos. No son cotizaciones definitivas. Implementación, mensualidad y consumo de terceros se presupuestan por separado.</div>
+      </div>
+    </section>
+
+    <section class="shell section builder-section" id="constructor">
+      <div class="section-heading">
+        <div><div class="overline">04 / ARMADOR DE PROPUESTAS</div><h2>Arma una oferta <em>en segundos.</em></h2></div>
+        <p>Añade productos del catálogo, visualiza un rango y copia un borrador para discutirlo con José o con el cliente.</p>
+      </div>
+      <div class="builder-layout">
+        <div class="builder-main">
+          <div class="builder-top"><div><span class="builder-kicker">TU SELECCIÓN</span><h3 id="selection-title">Aún no has añadido productos</h3></div><span class="builder-count" id="builder-count">0 módulos</span></div>
+          <div id="builder-items" class="builder-items"><div class="builder-placeholder"><span>+</span><p>Usa el botón “Añadir” de cualquier producto para empezar a diseñar una oferta.</p></div></div>
+          <div class="builder-addendum"><span>✳</span> Los rangos son acumulativos y orientativos. Antes de enviar una cotización hay que validar alcance, costos, privacidad e integraciones.</div>
+        </div>
+        <aside class="builder-summary">
+          <span class="summary-label">ESTIMACIÓN CONCEPTUAL</span>
+          <div class="summary-row"><span>Implementación inicial</span><strong id="setup-range">US$0</strong></div>
+          <div class="summary-row"><span>Servicio recurrente / mes</span><strong id="monthly-range">US$0</strong></div>
+          <div class="summary-divider"></div>
+          <label for="proposal-name">Nombre del cliente o proyecto</label>
+          <input id="proposal-name" placeholder="Ej. Coach Camila / Método EVO">
+          <button type="button" class="btn btn-lime full-button" id="copy-proposal">Copiar borrador de propuesta <span>↗</span></button>
+          <button type="button" class="clear-button" id="clear-builder">Vaciar selección</button>
+          <div id="copy-feedback" class="copy-feedback" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shell section go-to-market" id="ruta">
+      <div class="section-heading">
+        <div><div class="overline">05 / CÓMO LO VENDEMOS</div><h2>Simple para el coach.<br><em>Rentable para la alianza.</em></h2></div>
+        <p>Entramos por un problema inmediato. Después construimos una relación de largo plazo.</p>
+      </div>
+      <div class="steps">
+        <article><span class="step-no">01</span><div><h3>Detectar el cuello de botella</h3><p>¿Le faltan prospectos, pierde ventas o no alcanza a atender a sus clientes? Un diagnóstico corto define la entrada.</p></div></article>
+        <article><span class="step-no">02</span><div><h3>Ofrecer un producto ganador</h3><p>Comenzamos con IA para captación, CRM o tracking individual. Una implementación concreta, no treinta herramientas.</p></div></article>
+        <article><span class="step-no">03</span><div><h3>Expandir al sistema integral</h3><p>Cuando hay tracción, añadimos automatización, operación, retención, indicadores y módulos recurrentes.</p></div></article>
+      </div>
+      <div class="roles">
+        <div class="role-box"><span>JUMPERS / JOSÉ</span><h3>Demanda + ventas</h3><p>Oferta, posicionamiento, generación de oportunidades y acompañamiento comercial.</p></div>
+        <div class="roles-times">×</div>
+        <div class="role-box"><span>SAMUEL ACUÑA</span><h3>Estructura + tecnología</h3><p>Diagnóstico de seis pilares, experiencia de cliente, sistemas, automatizaciones y seguimiento.</p></div>
+      </div>
+    </section>
+
+    <section class="shell final-callout">
+      <div><span class="overline">IDEA MADRE</span><h2>Tu metodología.<br><em>Nuestro sistema.</em></h2><p>El coach mantiene la relación humana. Nosotros le damos infraestructura para atraer, atender y crecer.</p></div>
+      <a href="#productos" class="btn btn-lime">Explorar soluciones <span>↗</span></a>
+      <span class="callout-orb" aria-hidden="true"></span>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><div><strong>JUMPERS <span>×</span> SAMUEL ACUÑA</strong><small>Catálogo estratégico de productos y ofertas · 2026</small></div><p>Los módulos para psicología requieren validación legal y clínica, consentimiento, seguridad de datos y supervisión profesional. La IA no diagnostica ni sustituye atención terapéutica.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
